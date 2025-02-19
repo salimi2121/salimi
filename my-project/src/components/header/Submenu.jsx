@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const SubMenu = ({ title, options }) => {  
     const [isOpen, setIsOpen] = useState(false);   
-
+    
     return (  
         <div   
             className="relative inline-block text-left"   
