@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@tailwind base;  
+@tailwind components;  
+@tailwind utilities;  
+
+
+
+@keyframes slide-up {  
+    0% {  
+        transform: translateY(20%);  
+    }  
+    100% {  
+        transform: translateY(0%);  
+    }  
+}  
+
+.animate-slide-up {  
+    animation: slide-up 0.3s ease-in forwards;  
+}  
+
+.s-menu a:last-child {
+    border-bottom:0 !important;
+}
+
+/* hamberger menu */
+.hamburger-button {  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;    
+    background: transparent;  
+    border: 2px solid white;  
+    border-radius: 5px;
+    cursor: pointer;  
+    padding: 0;
+    margin-left: 20px;
+    width: 46px;
+    height: 40px;
+
+}  
+
+.bar {  
+    width: 30px;  
+    height: 2px;  
+    background-color: rgb(247, 243, 243);  
+    margin: 2px 0;  
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease-out 0s;}  
+
+/* تغییر شکل آیکون به ضربدر */  
+.toggle:nth-child(1) {  
+    transform: rotate(45deg) translate(4.3px, 4.3px);  
+}  
+
+.toggle:nth-child(2) {  
+    opacity: 0; /* وسط آیکون ناپدید می‌شود */  
+}  
+
+.toggle:nth-child(3) {  
+    transform: rotate(-45deg) translate(4.3px, -4.3px);  
+}  
+
+.menu {  
+    display: flex;  
+    flex-direction: column;  
+    background-color: white;  
+    padding: 10px;  
+    position: absolute;  
+    top: 0; /* محل نمایش منو */  
+    left: 0;  
+}  
+
+.menu a {  
+    text-decoration: none;  
+    /* color: black;   */
+    padding: 5px 0;  
+}  
