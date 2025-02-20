@@ -58,7 +58,7 @@ export default function Header() {
     ];
     return(
         // header
-        <div className="container flex gap-22 max-[460px]:gap-8 xl:justify-center justify-between max-[650px]:px-8 items-center w-full mt-5 ">
+        <div className="container flex gap-22 max-[460px]:gap-8 xl:justify-center justify-between max-[650px]:px-8 items-center w-full">
             <Logo imageUrl={flogo} />
             <div className="flex gap-14 items-center ">
             <Navmenu subMenus={subMenus} />  
