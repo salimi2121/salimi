@@ -28,7 +28,7 @@ const HamburgerMenu = ({ subMenus = [] }) => {
     }, [isOpen]);
 
     return (
-        <div className='xl:hidden mr-4 '>
+        <div className='xl:hidden'>
             <button className="hamburger-button" onClick={toggleMenu}>
                 <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
                 <span className={`bar ${isOpen ? 'toggle' : ''}`}></span>
@@ -50,7 +50,7 @@ const HamburgerMenu = ({ subMenus = [] }) => {
                             </a>
                         </button>
                         <div className='flex text-white px-7 mt-16'>
-                            <Navbtn />
+                            <Navbtn title="book a table" />
                         </div>
                     </div>
                 </div>

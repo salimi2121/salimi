@@ -11,7 +11,7 @@ const SubMenu = ({ title, options }) => {
         >  
             <button  
                     className="inline-flex gap-1 justify-between w-full px-2 py-4 cursor-pointer text-lg 
-                    font-semibold capitalize text-white group "  
+                    font-semibold capitalize  group "  
                 >  
                     <span className='group-hover:text-red-700 transition-text duration-200 '>{title}</span>
                     <svg
@@ -34,16 +34,16 @@ const SubMenu = ({ title, options }) => {
             </button>
         
             {isOpen && (  
-                <div className="absolute left-4 z-10 mt-0 w-56 animate-slide-up bg-white ">  
-                    <div className="flex flex-col py-1 px-6 s-menu ">  
-                        {options.map((option, index) => (  
+                <div className="absolute left-4 z-10 mt-0 w-56 h-auto animate-slide-up bg-white ">  
+                    <div className="flex flex-col py-1 px-6 s-menu z-30 ">  
+                        {options.map((option, index) => (   
                             <a   
                                 key={index}   
                                 href={option.link}   
-                                className=" py-3 text-xl font-semibold text-gray-900 border-b-1 border-gray-300 hover:text-red-700 capitalize"   
+                                className="submenu-label flex items-center py-3 text-lg font-semibold text-gray-900 border-b-1 border-gray-300 hover:text-red-700 capitalize transition-all ease-in-out "   
                                 role="menuitem"  
                             >  
-                                {option.label}  
+                               <span className='hidden submenu-dash text-2xl w-3 animate-slide-submenu mr-1 border-b-1 border-red-700 '></span> {option.label}  
                             </a>  
                         ))}  
                     </div>  

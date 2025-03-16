@@ -1,14 +1,107 @@
-import SubMenu from "./Submenu";
-
-
-
+import React, { useState, useEffect, useRef } from 'react';
+import { useData } from '../../DataContext';
+import useOutsideClick from '../useOutsideClick';
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { FaTimes } from 'react-icons/fa'; // آیکن ضربدر
+import Navbtn from './Navbtn';
+import { RiDeleteBin6Line } from "react-icons/ri";
 
 export default function Cartbtn() {
-    return (
-        <div className="flex justify-center items-center xl:rounded-xl rounded-xl bg-green-600 xl:p-5 p-3 cursor-pointer">
-            
-            <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="Interface / Shopping_Cart_01"> <path id="Vector" d="M17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17ZM17 17H9.29395C8.83288 17 8.60193 17 8.41211 16.918C8.24466 16.8456 8.09938 16.7291 7.99354 16.5805C7.8749 16.414 7.82719 16.1913 7.73274 15.7505L5.27148 4.26465C5.17484 3.81363 5.12587 3.58838 5.00586 3.41992C4.90002 3.27135 4.75477 3.15441 4.58732 3.08205C4.39746 3 4.16779 3 3.70653 3H3M6 6H18.8732C19.595 6 19.9555 6 20.1978 6.15036C20.41 6.28206 20.5653 6.48862 20.633 6.729C20.7104 7.00343 20.611 7.34996 20.411 8.04346L19.0264 12.8435C18.9068 13.2581 18.8469 13.465 18.7256 13.6189C18.6185 13.7547 18.4772 13.861 18.317 13.9263C18.1361 14 17.9211 14 17.4921 14H7.73047M8 21C6.89543 21 6 20.1046 6 19C6 17.8954 6.89543 17 8 17C9.10457 17 10 17.8954 10 19C10 20.1046 9.10457 21 8 21Z" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g> </g></svg>
+    const { foods } = useData();
+    const filteredSushi = foods.filter(food => food.category === 'sushi-cart');
+    const [cartItems, setCartItems] = useState(filteredSushi.slice(-5));
+    const [isOpen, setIsOpen] = useState(false);
+    const [animationClass, setAnimationClass] = useState('');
+    const menuRef = useRef(null);
 
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    // مدیریت تغییرات isOpen و تنظیم animationClass
+    useEffect(() => {
+        if (isOpen) {
+            setAnimationClass('animate-slidecart-right');
+        } else {
+            setAnimationClass('animate-slidecart-left');
+        }
+    }, [isOpen]);
+
+    // مدیریت کلیک خارج از منو
+    useOutsideClick(menuRef, () => {
+        if (isOpen) {
+            setAnimationClass('animate-slidecart-left'); // شروع انیمیشن بستن
+            const timer = setTimeout(() => {
+                setIsOpen(false); // بستن منو بعد از انیمیشن
+            }, 300); // مدت زمان انیمیشن
+            return () => clearTimeout(timer); // پاک کردن تایمر در صورت unmount شدن
+        }
+    });
+
+    const handleClose = () => {
+        setAnimationClass('animate-slidecart-left'); // شروع انیمیشن بستن
+        const timer = setTimeout(() => {
+            setIsOpen(false); // بستن منو بعد از انیمیشن
+        }, 300); // مدت زمان انیمیشن    
+    };
+
+    // تابع حذف آیتم از سبد خرید
+    const removeItem = (id) => {
+        setCartItems(cartItems.filter(item => item.id !== id));
+    };
+
+    return (
+        <div className='flex justify-center items-center' ref={menuRef} >
+            {/* دکمه سبد خرید */}
+            <button
+                className="xl:rounded-xl rounded-xl w-full h-full bg-green-600 xl:p-5 p-3 text-white text-xl font-semiboldbold cursor-pointer"
+                onClick={toggleMenu}
+            >
+                <AiOutlineShoppingCart />
+            </button>
+
+            {/* منو */}
+            {isOpen && (
+                <div className={`menu-cartbtn ${animationClass} fixed top-0 right-0 h-full bg-white z-50 w-96 `}>
+                    <div className='flex justify-between border-b border-gray-300 p-7 pt-10'>
+                        <h1 className='capitalize font-bold text-xl tracking-tighter'>my cart</h1>
+                        <button
+                            onClick={handleClose}
+                            className="border border-red-700 text-red-700 text-md px-1 cursor-pointer"
+                        >
+                            <FaTimes />
+                        </button>
+                    </div>
+                    <div className="flex flex-col gap-3">
+                        {cartItems.length > 0 ? (
+                            cartItems.map(sushi => (
+                                <div key={sushi.id} className="relative flex flex-col gap-2 p-7 bg-white border-b border-gray-300">
+                                    <div className='flex justify-between items-center gap-4'>
+                                        <div className='flex gap-4'>
+                                            <div className="flex justify-center items-center rounded-md">
+                                                <img src={sushi.image} alt="" className='w-23 h-20 rounded-xl' />
+                                            </div>
+                                            <div className="flex flex-col gap-1  justify-center">
+                                                <h1 className='capitalize text-gray-800 font-bold text-sm'>{sushi.title}</h1>
+                                                <p className='text-gray-600 text-lg'>1 × {sushi.price}</p>
+                                            </div>
+                                        </div>
+                                        {/* دکمه حذف با اتصال به تابع removeItem */}
+                                        <div className='cursor-pointer' onClick={() => removeItem(sushi.id)}>
+                                            <RiDeleteBin6Line />
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        ) : (
+                            <p>No sushi items available.</p>
+                        )}
+                    </div>
+                    <div className="mt-5 px-4 py-15">
+                        <Navbtn title="proceed to checkout" />
+                    </div>
+                </div>
+            )}
         </div>
-    )
+    );
 }

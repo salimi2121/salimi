@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
 @tailwind base;
+/* @import "tailwindcss/preflight";   */
 @tailwind components;
 @tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'Barlow Condensed';
+  src: url('./fonts/Barlow_Condensed/BarlowCondensed-ExtraBold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: bold;
+}
 
 
 
@@ -49,6 +59,20 @@
     animation: slide-left 0.6s ease forwards;
 }
 
+@keyframes slide-submenu {
+  0% {
+    width: 0;
+
+  }
+
+  100% {
+    width: 6%;
+  }
+}
+
+.animate-slide-submenu {
+  animation: slide-submenu 0.6s ease forwards;
+}
 .s-menu a:last-child {
     border-bottom: 0 !important;
 }
@@ -64,12 +88,20 @@
     border-radius: 5px;
     cursor: pointer;
     padding: 0;
-    margin-left: 20px;
+    margin-left: 14px;
     width: 46px;
     height: 40px;
 
 }
-
+.barbeef{
+  width: 30px;
+    height: 2px;
+    background-color: rgb(17, 17, 17);
+    margin: 2px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: all 0.3s ease-out 0s;
+}
 .bar {
     width: 30px;
     height: 2px;
@@ -102,8 +134,7 @@
     background-color: white;
     padding: 10px;
     position: absolute;
-    top: 0;
-    /* محل نمایش منو */
+    top: -20px;
     left: -300px;
     z-index: 100;
 }
@@ -113,6 +144,57 @@
     padding: 5px 0;
 }
 
+.submenu-label:hover {
+  .submenu-dash{
+    display: inline-block;
+  }
+}
+/* cartbtn */
+@keyframes slidecart-right {  
+  0% {  
+    transform: translateX(100%);  
+  }  
+  100% {  
+    transform: translateX(0%);  
+  }  
+}  
+
+.animate-slidecart-right {  
+  animation: slidecart-right 0.8s ease-in forwards;  
+}  
+
+@keyframes slidecart-left {  
+  0% {  
+    transform: translateX(0%);  
+  }  
+  100% {  
+    transform: translateX(100%);  
+  }  
+}  
+
+.animate-slidecart-left {  
+  animation: slidecart-left 0.9s ease forwards;  
+}  
+
+.menu-cartbtn {  
+  display: flex;  
+  flex-direction: column;  
+  width: 22.5rem;  
+  height: 100vh;  
+  background-color: white;  
+  padding: 0;  
+  position: absolute;  
+  top: -16px;  
+  right: 0rem; /* منو را به اندازه عرضش بیرون صفحه قرار دهید */  
+  z-index: 100;  
+  overflow: scroll;
+}  
+
+.menu-cartbtn a {
+  text-decoration: none;
+  padding: 5px 0;
+}
+
 /* hirro section */
 .image-one {
     position: absolute;
@@ -120,3 +202,150 @@
     right: -33px;
     width: 59%;
 }
+
+/*animation */
+@keyframes fallFromTop {
+    0% {
+      transform: translateY(-30%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-fall {
+    animation: fallFromTop 0.7s ease-out;
+  }
+  @keyframes fadeInUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .animate-fade-in-up {
+    animation: fadeInUp 0.4s ease-out forwards;
+  }
+  @keyframes fadeInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .animate-fade-in-Right {
+    animation: fadeInRight 0.6s ease-out forwards;
+  }
+
+  /* menu section */
+  .menu-item:hover {
+    .background{
+      background-color: rgb(203, 47, 47);
+      height: 220px;
+    }
+  }
+/* video section */
+
+@keyframes pulse {  
+  0% {  
+      transform: scale(1);  
+      opacity: 1;  
+  }  
+  50% {  
+      transform: scale(1.5);  
+      opacity: 0.5; /* محو شدن */  
+  }  
+  100% {  
+      transform: scale(1);  
+      opacity: 0; /* محو کامل */  
+  }  
+}  
+
+/* انیمیشن در Tailwind */  
+.animate-pulse {  
+  animation: pulse 1.5s ease-in-out infinite; /* مدت زمان انیمیشن و افکت زمان‌بندی */  
+}  
+
+/* تأخیر برای هر دایره */  
+.animation-delay-75 {  
+  animation-delay: 0.075s; /* تأخیر برای دایره اول */  
+}  
+
+.animation-delay-150 {  
+  animation-delay: 0.15s; /* تأخیر برای دایره دوم */  
+}  
+
+.animation-delay-225 {  
+  animation-delay: 0.225s; /* تأخیر برای دایره سوم */  
+}  
+  /* swiper pagination */
+
+  .custom-pagination .swiper-pagination-bullet {
+    width: 11px; /* عرض دات غیرفعال */
+    height: 11px; /* ارتفاع دات غیرفعال */
+    background-color: rgb(200, 196, 196); /* رنگ دات غیرفعال */
+    opacity: 1;
+    margin-left: 9px;
+    transition: all 0.3s ease; /* انیمیشن برای تغییر اندازه و رنگ */
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    width: 28px; /* عرض دات فعال */
+    border-radius: 20px;
+    background-color: rgb(175, 28, 28); /* رنگ دات فعال */
+}
+/* Date */
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+
+/* restaurant page */
+.bg-count {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+.overlay {  
+  position: absolute;  
+  top: 0;  
+  left: 0;  
+  right: 0;  
+  bottom: 0;  
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* بالاتر روشن تر */  
+  opacity: 0; /* در حالت عادی نامرئی */  
+  transition: opacity 0.3s ease; /* انتقال آرام */  
+}  
+
+.relative:hover .overlay {  
+  opacity: 1; /* وقتی هاور می‌کنید، opacity به 1 می‌رسد */  
+}  
+
+
+.overlay {  
+  transition: opacity 0.3s ease; /* انتقال آرام */  
+}  
+
+.title, .category {  
+  transition: opacity 0.7s ease, transform 0.7s ease; /* انتقال آرام برای opacity و transform */  
+}
+
+.overlay:hover .title,  
+.overlay:hover .category {  
+    opacity: 1; /* وقتی هاور می‌کنید، opacity به 1 می‌رسد */  
+    transform: translateY(0); /* به حالت طبیعی برگردید */  
+}  
+
+/* حالت اولیه برای عنوان و دسته بندی پس از برگرداندن به پایین */  
+.title, .category {  
+    transform: translateY(4rem); /* 4rem پایین‌تر از حالت عادی */  
+    opacity: 0; /* ابتدا نامرئی */  
+}  
