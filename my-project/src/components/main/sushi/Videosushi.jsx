@@ -25,7 +25,8 @@ export default function Videososhi() {
     };
 
     return (
-        <div className="bg-cover bg-center bg-no-repeat relative before:absolute before:z-1 before:content-[''] before:opacity-70 before:bg-gray-950 before:top-0 before:left-0 before:w-full before:h-full" style={{ backgroundImage: `url(${bgvid})` }}>
+        <div className="bg-cover bg-center bg-no-repeat relative before:absolute before:z-1 before:content-[''] before:opacity-70 
+        before:bg-gray-950 before:top-0 before:left-0 before:w-full before:h-full" style={{ backgroundImage: `url(${bgvid})` }}>
             <div className="mx-auto ">
                 <FadeInDown>
                     <div className="flex flex-col py-40 z-10">

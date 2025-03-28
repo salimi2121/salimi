@@ -6,6 +6,13 @@ import HerosectionBurger from "./HeroSectionBurger";
 import AboutBurger from "./AboutBurger";
 import BannerBurger from "./BanerBurger";
 import MenuBurger from "./MenuBurger";
+import BookBurger from "./BookBurger";
+import OfferBurger from "./OfferBurger";
+import VideoBurger from "./VideoBurger";
+import TestimonialBurger from "./TestimonialBurger";
+import DeliveryBurger from "../beef/DeliveryBurger";
+import BlogBurger from "./BlogBurger";
+import GalleryBurger from "./GalleryBurger";
 
 
 export default function IndexBurger() {
@@ -13,7 +20,6 @@ export default function IndexBurger() {
         <div>
             {/* herro section */}
             <div className="relative overflow-hidden h-[850px] " >
-
                 <div className="absolute top-0 -z-1 bg-white overflow-hidden xl:h-[850px] max-[1200px]:h-[700px] max-[992px]:h-[900px]  " >
                     <img src={bghirro} alt="" className="min-h-[888px] max-[1020px]:min-h-[650px] max-[992px]:min-h-[750px] w-full 
                     object-cover align-middle max-w-full " />
@@ -28,7 +34,14 @@ export default function IndexBurger() {
             <AboutBurger />
             <BannerBurger />
             <MenuBurger />
-            
+            <BookBurger />
+            <OfferBurger />
+            <VideoBurger />
+            <TestimonialBurger />
+            <DeliveryBurger />
+            <BlogBurger />
+            <GalleryBurger />
+
             <ScrollToTopButton />
             <Footer />
         </div>

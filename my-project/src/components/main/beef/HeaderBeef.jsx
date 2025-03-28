@@ -14,15 +14,15 @@ export default function HeaderBeef() {
                 { label: 'home restaurant ', link: '/' },
                 { label: 'home beef ', link: '/IndexBeef' },
                 { label: 'home burger ', link: '/IndexBurger' },
-                { label: 'home pizza ', link: '#' },
+                { label: 'home pizza ', link: '/IndexPizza' },
                 { label: 'home sushi ', link: '/IndexSushi' },
             ],
         },
         {
             title: 'menu ',
             options: [
-                { label: 'menu list one ', link: '#' },
-                { label: 'menu list two ', link: '#' },
+                { label: 'menu list one ', link: '/IndexMenu1' },
+                { label: 'menu list two ', link: '/IndexMenu2' },
                 { label: 'menu grid ', link: '#' },
                 { label: 'menu details ', link: '#' },
             ],
