@@ -384,3 +384,20 @@
 .hover-img:hover .h-img{
   transform: scale(1.15);
 }
+
+/* menu details page */
+
+  .square-list li {
+    display: flex;
+    align-items: start;
+  }
+  .square-list li::before {
+   content:'' ;
+   display:block; 
+   width: 5px;
+   height: 5px;
+   background-color: black;
+   margin-top: 10px;
+   margin-right: 10px;
+  }
+

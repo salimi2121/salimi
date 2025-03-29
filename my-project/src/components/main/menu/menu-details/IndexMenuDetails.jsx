@@ -2,11 +2,11 @@ import bghirro from "../../../../assets/bg-h.jpg"
 import Footer from "../../../footer/Footer";
 import ScrollToTopButton from "../../sushi/ScrollToTopButton";
 import HeaderPages from "../../../header/HeaderPages";
-import { MenuGridProvider } from "../../../../MenuGridContext";
-import ChooseMenuGrid from "./ChooseMenuGrid";
+import MenuDetails1 from "./MenuDetails1";
+import MenuDetails2 from "./MenuDetails2";
+import MenuDetails3 from "./MenuDetails3";
 
-
-export default function IndexMenuGrid() {
+export default function IndexMenuDetails() {
     return (
         <div>
             {/* hirro section */}
@@ -17,11 +17,11 @@ export default function IndexMenuGrid() {
                 </div>
                 <div className="relative mx-auto flex justify-center max-w-full ">
                     <div className="pt-60 pb-30 capitalize text-white flex flex-col gap-6 justify-center items-center">
-                        <h1 className="text-6xl font-bold ">menu restaurant</h1>
+                        <h1 className="text-6xl font-bold ">menu Details</h1>
                         <div className="flex gap-3 justify-center items-center">
                             <p className="text-md font-semibold">Home</p>
                             <p className="text-md font-semibold"> - </p>
-                            <p className="text-md font-semibold">Menu Restaurant </p>
+                            <p className="text-md font-semibold">Menu Details </p>
                         </div>
                     </div>
 
@@ -30,10 +30,9 @@ export default function IndexMenuGrid() {
                     </div>
                 </div>
             </div>
-            <MenuGridProvider>
-           <ChooseMenuGrid />
-            </MenuGridProvider>
-          
+            <MenuDetails1 />
+            <MenuDetails2 />
+            <MenuDetails3 />
             
 
 

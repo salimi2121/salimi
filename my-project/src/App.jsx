@@ -8,6 +8,8 @@ import IndexBurger from './components/main/burger/IndexBurger';
 import IndexPizza from './components/main/pizza/IndexPizza';
 import IndexMenu2 from './components/main/menu/menu-list-two/IndexMenu2';
 import IndexMenu1 from './components/main/menu/menu-list-one/IndexMenu1';
+import IndexMenuGrid from './components/main/menu/menu-grid/IndexMenuGrid';
+import IndexMenuDetails from './components/main/menu/menu-details/IndexMenuDetails';
 
 
 export default function App() {
@@ -25,8 +27,10 @@ export default function App() {
                 <Route path="/IndexBurger" element={<IndexBurger />} />  
                 <Route path="/IndexPizza" element={<IndexPizza />} />
                 <Route path="/IndexMenu1" element={<IndexMenu1 />} />
-
                 <Route path="/IndexMenu2" element={<IndexMenu2 />} />
+                <Route path="/IndexMenuGrid" element={<IndexMenuGrid />} />
+                <Route path="/IndexMenuDetails" element={<IndexMenuDetails />} />
+
 
             </Routes>  
         </DataProvider>  
