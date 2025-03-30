@@ -28,11 +28,11 @@ export default function Header() {
         {
             title: 'pages ',
             options: [
-                { label: 'about us ', link: '/Index' },
-                { label: 'our history ', link: '/Index' },
-                { label: 'our chefs ', link: '/Index' },
-                { label: 'our gallery ', link: '/Index' },
-                { label: 'faqs ', link: '/Index' },
+                { label: 'about us ', link: '/IndexAbout' },
+                { label: 'our history ', link: '/IndexHistory' },
+                { label: 'our chefs ', link: '/IndexChef' },
+                { label: 'our gallery ', link: '/IndexGallery' },
+                { label: 'faqs ', link: '/IndexFaqs' },
                 { label: 'error 404 ', link: '/Index' },
             ],
         },

@@ -10,6 +10,11 @@ import IndexMenu2 from './components/main/menu/menu-list-two/IndexMenu2';
 import IndexMenu1 from './components/main/menu/menu-list-one/IndexMenu1';
 import IndexMenuGrid from './components/main/menu/menu-grid/IndexMenuGrid';
 import IndexMenuDetails from './components/main/menu/menu-details/IndexMenuDetails';
+import IndexAbout from './components/main/pages/abaout/IndexAbout';
+import IndexHistory from './components/main/pages/history/IndexHistory';
+import IndexChef from './components/main/pages/chef/IndexChef';
+import IndexGallery from './components/main/pages/gallery/IndexGallery';
+import IndexFaqs from './components/main/pages/faqs/IndexFaqs';
 
 
 export default function App() {
@@ -30,6 +35,14 @@ export default function App() {
                 <Route path="/IndexMenu2" element={<IndexMenu2 />} />
                 <Route path="/IndexMenuGrid" element={<IndexMenuGrid />} />
                 <Route path="/IndexMenuDetails" element={<IndexMenuDetails />} />
+                <Route path="/IndexAbout" element={<IndexAbout />} />
+                <Route path="/IndexHistory" element={<IndexHistory />} />
+                <Route path="/IndexChef" element={<IndexChef />} />
+                <Route path="/IndexGallery" element={<IndexGallery />} />
+                <Route path="/IndexFaqs" element={<IndexFaqs />} />
+                
+
+
 
 
             </Routes>  
