@@ -15,6 +15,8 @@ import IndexHistory from './components/main/pages/history/IndexHistory';
 import IndexChef from './components/main/pages/chef/IndexChef';
 import IndexGallery from './components/main/pages/gallery/IndexGallery';
 import IndexFaqs from './components/main/pages/faqs/IndexFaqs';
+import Index404 from './components/main/pages/404/Index404';
+import IndexShop from './components/main/shop/our-shop/IndexShop';
 
 
 export default function App() {
@@ -40,6 +42,8 @@ export default function App() {
                 <Route path="/IndexChef" element={<IndexChef />} />
                 <Route path="/IndexGallery" element={<IndexGallery />} />
                 <Route path="/IndexFaqs" element={<IndexFaqs />} />
+                <Route path="/Index404" element={<Index404 />} />
+                <Route path="/IndexShop" element={<IndexShop />} />
                 
 
 

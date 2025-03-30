@@ -35,14 +35,14 @@ export default function HeaderPizza() {
                 { label: 'our chefs ', link: '/IndexChef' },
                 { label: 'our gallery ', link: '/IndexGallery' },
                 { label: 'faqs ', link: '/IndexFaqs' },
-                { label: 'error 404 ', link: '/Index' },
+                { label: 'error 404 ', link: '/Index404' },
             ],
         },
         {
             title: 'shop ',
             options: [
-                { label: 'our shop ', link: '/Index' },
-                { label: 'product details ', link: '/Index' },
+                { label: 'our shop ', link: '/IndexShop' },
+                { label: 'product details ', link: '/IndexMenuDetails' },
                 { label: 'cart ', link: '/Index' },
                 { label: 'check out ', link: '/Index' },
             ],

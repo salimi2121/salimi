@@ -201,7 +201,7 @@ export const MenuGridProvider = ({ children }) => {
             title: 'T-Bone Steak',
             body: 'Bourbon-infused beefy bliss savory, smoky, sublime perfection.',
             price: '$170',
-            image: b18,
+            image: b19,
             href: ''
         }, 
         {
@@ -211,7 +211,7 @@ export const MenuGridProvider = ({ children }) => {
             title: 'Tomahawk Steak',
             body: 'Grilled American fillet, a succulent culinary Pizza.',
             price: '$170',
-            image: b18,
+            image: b20,
             href: ''
         }, 
         {
@@ -221,7 +221,7 @@ export const MenuGridProvider = ({ children }) => {
             title: 'Filet Steak',
             body: 'Sirloin infused, smoked paprika perfection on grill.',
             price: '$170',
-            image: b18,
+            image: b21,
             href: ''
         }, 
         {
@@ -231,7 +231,7 @@ export const MenuGridProvider = ({ children }) => {
             title: 'Flank Steak',
             body: 'Stir-fried Thai basil beef aromatic, savory delight.',
             price: '$170',
-            image: b18,
+            image: b22,
             href: ''
         }, 
         {
@@ -241,7 +241,7 @@ export const MenuGridProvider = ({ children }) => {
             title: 'Ribeye Steak',
             body: 'Guinness-glazed ribs: rich, savory, Irish-inspired indulgence.',
             price: '$170',
-            image: b18,
+            image: b23,
             href: ''
         }, 
         {
@@ -251,7 +251,7 @@ export const MenuGridProvider = ({ children }) => {
             title: 'Porterhouse Steak',
             body: 'Gourmet delight grilled to perfection and more.',
             price: '$170',
-            image: b18,
+            image: b24,
             href: ''
         }, 
     ]);
