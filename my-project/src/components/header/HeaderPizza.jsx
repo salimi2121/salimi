@@ -1,7 +1,7 @@
 import flogo from "../../assets/logo-white2.png";
 import Logo from "./Logo";
 import React, { useEffect, useState } from 'react';
-import Cartbtn from "./cartbtn";
+import Cartbtn from "./Cartbtn";
 import HamburgerMenu from "../header/Hambergermenu";
 import NavbtnPizza from "./NavbtnPizza";
 import NavmenuPizza from "./NavmenuPizza";
@@ -43,16 +43,16 @@ export default function HeaderPizza() {
             options: [
                 { label: 'our shop ', link: '/IndexShop' },
                 { label: 'product details ', link: '/IndexMenuDetails' },
-                { label: 'cart ', link: '/Index' },
-                { label: 'check out ', link: '/Index' },
+                { label: 'cart ', link: '/IndexCart' },
+                { label: 'check out ', link: '/IndexCheckout' },
             ],
         },
         {
             title: 'blog ',
             options: [
-                { label: 'blog grid', link: '/Index' },
-                { label: 'blog standard ', link: '/Index' },
-                { label: 'blog details ', link: '/Index' },
+                { label: 'blog grid', link: '/IndexBloggrid' },
+                { label: 'blog standard ', link: '/IndexBlogstandard' },
+                { label: 'blog details ', link: '/IndexBlogdetails' },
             ],
         },
     ];

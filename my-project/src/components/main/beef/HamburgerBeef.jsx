@@ -46,7 +46,7 @@ const HamburgerMenu = ({ subMenus = [] }) => {
                         </div>
 
                         <button className='px-3'>
-                            <a className="flex cursor-pointer font-bold hover:text-red-700 transition-text duration-300">
+                            <a href='/IndexContact' className="flex cursor-pointer font-bold hover:text-red-700 transition-text duration-300">
                                 <span>Contact</span>
                             </a>
                         </button>

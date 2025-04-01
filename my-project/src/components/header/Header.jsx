@@ -41,16 +41,16 @@ export default function Header() {
             options: [
                 { label: 'our shop ', link: '/IndexShop' },
                 { label: 'product details ', link: '/IndexMenuDetails' },
-                { label: 'cart ', link: '/Index' },
-                { label: 'check out ', link: '/Index' },
+                { label: 'cart ', link: '/IndexCart' },
+                { label: 'check out ', link: '/IndexCheckout' },
             ],
         },
         {
             title: 'blog ',
             options: [
-                { label: 'blog grid', link: '/Index' },
-                { label: 'blog standard ', link: '/Index' },
-                { label: 'blog details ', link: '/Index' },
+                { label: 'blog grid', link: '/IndexBloggrid' },
+                { label: 'blog standard ', link: '/IndexBlogstandard' },
+                { label: 'blog details ', link: '/IndexBlogdetails' },
             ],
         },
     ];  

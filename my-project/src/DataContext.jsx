@@ -282,7 +282,7 @@ export const DataProvider = ({ children }) => {
             category: 'sushi-cart',
             title: 'Urban Bourbon Bliss Ribeye',
             body: '',
-            price: '$940.00',
+            price: '$940',
             image: cart1,
             href: '',
             time:'May 24, 2024'
@@ -292,7 +292,7 @@ export const DataProvider = ({ children }) => {
             category: 'sushi-cart',
             title: 'Artisanal Truffle Tango Sirloin ',
             body: '',
-            price: '$940.00',
+            price: '$940',
             image: cart2,
             href: '',
             time:'May 24, 2024'
@@ -302,7 +302,7 @@ export const DataProvider = ({ children }) => {
             category: 'sushi-cart',
             title: 'Smoked Paprika Perfection ',
             body: '',
-            price: '$940.00',
+            price: '$940',
             image: cart3,
             href: '',
             time:'May 24, 2024'
@@ -312,7 +312,7 @@ export const DataProvider = ({ children }) => {
             category: 'sushi-cart',
             title: 'Tandoori Temptation Tender ',
             body: '',
-            price: '$940.00',
+            price: '$940',
             image: cart4,
             href: '',
             time:'May 24, 2024'

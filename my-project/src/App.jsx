@@ -17,6 +17,12 @@ import IndexGallery from './components/main/pages/gallery/IndexGallery';
 import IndexFaqs from './components/main/pages/faqs/IndexFaqs';
 import Index404 from './components/main/pages/404/Index404';
 import IndexShop from './components/main/shop/our-shop/IndexShop';
+import IndexCart from './components/main/shop/cart/IndexCart';
+import IndexCheckout from './components/main/shop/checkout/IndexCheckout';
+import IndexBloggrid from './components/main/blog/blog-grid/IndexBloggrid';
+import IndexBlogstandard from './components/main/blog/blog-standard/IndexBlogstandard';
+import IndexBlogdetails from './components/main/blog/blog-details/IndexBlogdetails';
+import IndexContact from './components/main/contact/IndexContact';
 
 
 export default function App() {
@@ -44,6 +50,13 @@ export default function App() {
                 <Route path="/IndexFaqs" element={<IndexFaqs />} />
                 <Route path="/Index404" element={<Index404 />} />
                 <Route path="/IndexShop" element={<IndexShop />} />
+                <Route path="/IndexCart" element={<IndexCart />} />
+                <Route path="/IndexCheckout" element={<IndexCheckout />} />
+                <Route path="/IndexBloggrid" element={<IndexBloggrid />} />
+                <Route path="/IndexBlogstandard" element={<IndexBlogstandard />} />
+                <Route path="/IndexBlogdetails" element={<IndexBlogdetails />} />
+                <Route path="/IndexContact" element={<IndexContact />} />
+
                 
 
 

@@ -3,7 +3,7 @@ import flogo from "../../../assets/beef-page/logo-main.png";
 import Logo from "../../header/Logo";
 import React, { useEffect, useState } from 'react';
 import HamburgerBeef from "./HamburgerBeef";
-import Cartbtn from "../../header/cartbtn";
+import Cartbtn from "../../header/Cartbtn";
 import Navbtn from "../../header/Navbtn";
 
 export default function HeaderBeef() {
@@ -43,16 +43,16 @@ export default function HeaderBeef() {
             options: [
                 { label: 'our shop ', link: '/IndexShop' },
                 { label: 'product details ', link: '/IndexMenuDetails' },
-                { label: 'cart ', link: '/Index' },
-                { label: 'check out ', link: '/Index' },
+                { label: 'cart ', link: '/IndexCart' },
+                { label: 'check out ', link: '/IndexCheckout' },
             ],
         },
         {
             title: 'blog ',
             options: [
-                { label: 'blog grid', link: '/Index' },
-                { label: 'blog standard ', link: '/Index' },
-                { label: 'blog details ', link: '/Index' },
+                { label: 'blog grid', link: '/IndexBloggrid' },
+                { label: 'blog standard ', link: '/IndexBlogstandard' },
+                { label: 'blog details ', link: '/IndexBlogdetails' },
             ],
         },
     ];
