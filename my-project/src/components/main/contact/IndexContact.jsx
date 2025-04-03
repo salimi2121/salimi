@@ -2,6 +2,7 @@ import bghirro from "../../../assets/bg-h.jpg"
 import Footer from "../../footer/Footer";
 import ScrollToTopButton from "../sushi/ScrollToTopButton";
 import HeaderPages from "../../header/HeaderPages";
+import Contact1 from "./contact1";
 
 export default function IndexContact(){
      return (
@@ -14,11 +15,11 @@ export default function IndexContact(){
                     </div>
                     <div className="relative mx-auto flex justify-center max-w-full ">
                         <div className="pt-60 pb-30 capitalize text-white flex flex-col gap-6 justify-center items-center">
-                            <h1 className="text-6xl font-bold ">Cart</h1>
+                            <h1 className="text-6xl font-bold ">Contact us</h1>
                             <div className="flex gap-3 justify-center items-center">
                                 <p className="text-md font-semibold">Home</p>
                                 <p className="text-md font-semibold"> - </p>
-                                <p className="text-md font-semibold"> Cart</p>
+                                <p className="text-md font-semibold">Contact</p>
                             </div>
                         </div>
     
@@ -27,7 +28,7 @@ export default function IndexContact(){
                         </div>
                     </div>
                 </div>
-                
+                <Contact1 />
 
                 <ScrollToTopButton />
                 <Footer />

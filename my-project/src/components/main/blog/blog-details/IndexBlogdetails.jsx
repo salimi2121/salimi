@@ -2,6 +2,7 @@ import bghirro from "../../../../assets/bg-h.jpg"
 import Footer from "../../../footer/Footer";
 import ScrollToTopButton from "../../sushi/ScrollToTopButton";
 import HeaderPages from "../../../header/HeaderPages";
+import BlogDetails1 from "./BlogDetails1";
 
 export default function IndexBlogdetails(){
      return (
@@ -14,11 +15,11 @@ export default function IndexBlogdetails(){
                     </div>
                     <div className="relative mx-auto flex justify-center max-w-full ">
                         <div className="pt-60 pb-30 capitalize text-white flex flex-col gap-6 justify-center items-center">
-                            <h1 className="text-6xl font-bold ">Cart</h1>
+                            <h1 className="text-6xl font-bold ">Blog Details</h1>
                             <div className="flex gap-3 justify-center items-center">
                                 <p className="text-md font-semibold">Home</p>
                                 <p className="text-md font-semibold"> - </p>
-                                <p className="text-md font-semibold"> Cart</p>
+                                <p className="text-md font-semibold">Blog Details</p>
                             </div>
                         </div>
     
@@ -27,7 +28,7 @@ export default function IndexBlogdetails(){
                         </div>
                     </div>
                 </div>
-                
+                <BlogDetails1 />
 
                 <ScrollToTopButton />
                 <Footer />

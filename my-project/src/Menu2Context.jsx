@@ -17,6 +17,12 @@ import b15 from './assets/pages/menu1/m15.jpg'
 import b16 from './assets/pages/menu1/m16.jpg'
 import b17 from './assets/pages/menu1/m17.jpg'
 import b18 from './assets/pages/menu1/m18.jpg'
+import b19 from './assets/pages/menu1/m19.jpg'
+import b20 from './assets/pages/menu1/m20.jpg'
+import b21 from './assets/pages/menu1/m21.jpg'
+import b22 from './assets/pages/menu1/m22.jpg'
+import b23 from './assets/pages/menu1/m23.jpg'
+import b24 from './assets/pages/menu1/m24.jpg'
 
 
 export const Menu2Context = createContext();
@@ -194,7 +200,7 @@ export const Menu2Provider = ({ children }) => {
             title: 'T-Bone Steak',
             body: 'Bourbon-infused beefy bliss savory, smoky, sublime perfection.',
             price: '$170',
-            image: b18,
+            image: b19,
             href: ''
         }, 
         {
@@ -204,7 +210,7 @@ export const Menu2Provider = ({ children }) => {
             title: 'Tomahawk Steak',
             body: 'Grilled American fillet, a succulent culinary Pizza.',
             price: '$170',
-            image: b18,
+            image: b20,
             href: ''
         }, 
         {
@@ -214,7 +220,7 @@ export const Menu2Provider = ({ children }) => {
             title: 'Filet Steak',
             body: 'Sirloin infused, smoked paprika perfection on grill.',
             price: '$170',
-            image: b18,
+            image: b21,
             href: ''
         }, 
         {
@@ -224,7 +230,7 @@ export const Menu2Provider = ({ children }) => {
             title: 'Flank Steak',
             body: 'Stir-fried Thai basil beef aromatic, savory delight.',
             price: '$170',
-            image: b18,
+            image: b22,
             href: ''
         }, 
         {
@@ -234,7 +240,7 @@ export const Menu2Provider = ({ children }) => {
             title: 'Ribeye Steak',
             body: 'Guinness-glazed ribs: rich, savory, Irish-inspired indulgence.',
             price: '$170',
-            image: b18,
+            image: b23,
             href: ''
         }, 
         {
@@ -244,7 +250,7 @@ export const Menu2Provider = ({ children }) => {
             title: 'Porterhouse Steak',
             body: 'Gourmet delight grilled to perfection and more.',
             price: '$170',
-            image: b18,
+            image: b24,
             href: ''
         }, 
     ]);

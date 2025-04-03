@@ -8,12 +8,40 @@ export default function Cart1() {
     const { foods } = useData();
     const filteredSushi = foods.filter(food => food.category === 'sushi-cart');
     const [cartItems, setCartItems] = useState(filteredSushi.slice(-5));
-
+    const [quantities, setQuantities] = useState(Array(cartItems.length).fill(1)); // تعداد اولیه تمام آیتم‌ها  
 
     // تابع حذف آیتم از سبد خرید
     const removeItem = (id) => {
+        const index = cartItems.findIndex(item => item.id === id);
         setCartItems(cartItems.filter(item => item.id !== id));
+        setQuantities(quantities.filter((_, i) => i !== index)); // حذف تعداد مربوطه  
+
     };
+    // محاسبه مجموع قیمت  
+    const calculateSubtotal = () => {
+        return cartItems.reduce((total, sushi, index) => {
+            const priceStr = sushi.price.replace(/\$/g, ''); // حذف $
+            const price = parseFloat(priceStr) || 0;
+            const quantity = parseInt(quantities[index]) || 0;
+            return total + (price * quantity);
+        }, 0);
+    };
+
+    // به‌روزرسانی تعداد در صورت تغییر  
+    const updateQuantity = (index, quantity) => {
+        const newQuantities = [...quantities];
+        newQuantities[index] = Math.max(0, quantity); // اطمینان از مقدار عددی مثبت  
+        setQuantities(newQuantities);
+    };
+    useEffect(() => {
+        setQuantities(prev => {
+            const newQuantities = [...prev];
+            while (newQuantities.length < cartItems.length) {
+                newQuantities.push(1); // اضافه کردن مقادیر پیش‌فرض برای آیتم‌های جدید
+            }
+            return newQuantities.slice(0, cartItems.length); // مطابقت طول آرایه
+        });
+    }, [cartItems]);
     return (
         <div className="mx-auto  xl:px-30
          max-[1280px]:px-20 max-[1200px]:px-17 max-[992px]:px-38 max-[950px]:px-30 max-[910px]:px-24 max-[880px]:px-19 max-[768px]:px-30 max-[710px]:px-24 max-[690px]:px-17 max-[650px]:px-14 max-[600px]:px-5
@@ -22,6 +50,7 @@ export default function Cart1() {
                 <div className="flex flex-col w-4/6 max-[1280px]:w-full tracking-tighter">
                     {cartItems.length > 0 ? (
                         cartItems.map((sushi, index) => (
+
                             <div key={sushi.id} className={`relative flex flex-col gap-2 py-2 bg-white ${index !== cartItems.length - 1 ? 'border-b border-gray-300' : ''
                                 }`}>
                                 <div className='flex justify-between items-center gap-4 max-[1280px]:w-full'>
@@ -37,7 +66,9 @@ export default function Cart1() {
                                             <div className="flex gap-2 max-[500px]:gap-0 items-center">
                                                 <p className='text-gray-800 text-lg font-semibold'>{sushi.price}</p>
                                                 <div className="w-40 mx-3 max-[768px]:w-36 max-[520px]:w-20 ">
-                                                    <CounterCart />
+                                                    <CounterCart quantity={quantities[index]}
+                                                        setQuantity={(quantity) => updateQuantity(index, quantity)}
+                                                    />
                                                 </div>
                                             </div>
 
@@ -45,7 +76,9 @@ export default function Cart1() {
                                         </div>
                                     </div>
                                     <div className="flex gap-4 items-center">
-                                        <p className='text-gray-800 text-lg font-semibold'>{sushi.price}</p>
+                                        <p className='text-gray-800 text-lg font-semibold'>
+                                            ${(parseFloat(String(sushi.price).replace(/[^\d.]/g, '')) || 0) * (quantities[index] || 0)}
+                                        </p>
                                         {/* دکمه حذف با اتصال به تابع removeItem */}
                                         <div className='cursor-pointer' onClick={() => removeItem(sushi.id)}>
                                             <RiDeleteBin6Line />
@@ -56,7 +89,7 @@ export default function Cart1() {
                             </div>
                         ))
                     ) : (
-                        <p>No sushi items available.</p>
+                        <p>No food items available.</p>
                     )}
                     <div className="flex max-[768px]:flex-col gap-6 items-center max-[768px]:items-start mt-15 max-[1280px]:mb-10">
                         <div className="relative ">
@@ -70,7 +103,7 @@ export default function Cart1() {
                             </div>
                         </div>
                         <div className="">
-                        <Navbtn title='update cart' />
+                            <Navbtn title='update cart' />
 
                         </div>
                     </div>
@@ -80,7 +113,7 @@ export default function Cart1() {
                     <div className="flex flex-col capitalize">
                         <div className="flex justify-between border-b text-gray-700 font-semibold border-gray-200 px-2 py-3">
                             <p className="">cart subtotal</p>
-                            <p className="">$270</p>
+                            <p className="">${calculateSubtotal()}</p> {/* نمایش مجموع */}
                         </div>
                         <div className="flex justify-between border-b text-gray-700 font-semibold border-gray-200 px-2 py-3">
                             <p className="">shopping fee</p>
@@ -88,11 +121,11 @@ export default function Cart1() {
                         </div>
                         <div className="flex justify-between font-semibold px-2 py-4">
                             <p className="">order total</p>
-                            <p className="">$320</p>
+                            <p className="">${calculateSubtotal() + 50}</p> {/* اضافه کردن هزینه ارسال به مجموع */}
                         </div>
                     </div>
                     <div className="max-[1280px]:w-70">
-                    <Navbtn title='proceed to chekout' />
+                        <Navbtn title='proceed to chekout' />
 
                     </div>
 

@@ -61,8 +61,13 @@ export default function ChefResSection() {
                 </FadeInDown>
                 <FadeInUp>
                     <div className="grid grid-cols-3 max-[1100px]:grid-cols-2 max-[768px]:grid-cols-1 gap-6 justify-center items-center px-24 max-[1310px]:px-28 max-[1280px]:px-0 ">
-                        {chefs.map((chef) => (
-                            <div className="relative group flex items-center justify-center ">
+                        {chefs.map((chef , index) => (
+                            <div key={index}
+                            className={`relative flex items-center justify-center  ${
+                                chefs.length % 2 !== 0 && index === chefs.length - 1 
+                                ? "max-[1100px]:col-span-2 max-[1100px]:justify-self-center max-[1100px]:w-1/2 max-[768px]:col-span-1 max-[768px]:w-full" 
+                                : ""
+                            }`} >
                                 <img src={chef.image} alt={chef.firstname} className="flex-shrink-0" />
                                 <div className="absolute bottom-4 flex flex-col justify-center transition-all duration-200 ease-in group-hover:bg-red-700 tracking-tighter items-center bg-white w-4/5 max-[768px]:w-3/5 max-[630px]:w-[70%] max-[560px]:w-[80%] p-6">
                                     <h1 className="font-bold text-2xl capitalize group-hover:text-white">{chef.firstname} {chef.lastname}</h1>

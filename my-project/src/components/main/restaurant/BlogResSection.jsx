@@ -56,8 +56,13 @@ export default function BlogResSection() {
                 </FadeInDown>
                 <FadeInUp>
                     <div className="grid grid-cols-3 max-[1150px]:grid-cols-2 max-[768px]:grid-cols-1 gap-5 justify-center items-center ">
-                        {blogfoods.map((food) => (
-                            <div className="flex flex-col justify-center items-center gap-8 bg-[#f5f5f5] ">
+                        {blogfoods.map((food , index) => (
+                            <div key={index}
+                            className={`flex flex-col items-center justify-center gap-8 bg-[#f5f5f5] ${
+                            food.length % 2 !== 0 && index === food.length - 1 
+                                ? "max-[1150px]:col-span-2 max-[1150px]:justify-self-center max-[1150px]:w-1/2 max-[768px]:col-span-1 max-[768px]:w-full" 
+                                : ""
+                            }`} >
                                 <img src={food.img} alt={food.title} className='w-full min-h-[244px]' />
                                 <div className="flex flex-col gap-3 justify-center items-center px-8 pb-8" >
                                     <div className="flex items-center justify-between w-full text-gray-600">

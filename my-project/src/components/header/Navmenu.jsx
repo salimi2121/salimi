@@ -10,7 +10,7 @@ export default function Navmenu({ subMenus }) {
                         <Submenu key={index} title={submenu.title} options={submenu.options} />
                     ))}
                     <button>
-                        <a className="flex cursor-pointer text-lg font-semibold hover:text-red-700 transition-text duration-300">
+                        <a href="IndexContact" className="flex cursor-pointer text-lg font-semibold hover:text-red-700 transition-text duration-300">
                             <span>Contact</span>
                         </a>
                     </button>
