@@ -7,7 +7,6 @@ import IndexBeef from './components/main/beef/IndexBeef';
 import IndexBurger from './components/main/burger/IndexBurger';
 import IndexPizza from './components/main/pizza/IndexPizza';
 import IndexMenu2 from './components/main/menu/menu-list-two/IndexMenu2';
-import IndexMenu1 from './components/main/menu/menu-list-one/IndexMenu1';
 import IndexMenuGrid from './components/main/menu/menu-grid/IndexMenuGrid';
 import IndexMenuDetails from './components/main/menu/menu-details/IndexMenuDetails';
 import IndexAbout from './components/main/pages/abaout/IndexAbout';
@@ -23,6 +22,7 @@ import IndexBloggrid from './components/main/blog/blog-grid/IndexBloggrid';
 import IndexBlogstandard from './components/main/blog/blog-standard/IndexBlogstandard';
 import IndexBlogdetails from './components/main/blog/blog-details/IndexBlogdetails';
 import IndexContact from './components/main/contact/IndexContact';
+import IndexMenu1 from './components/main/menu/menu-list-one/indexMenu1';
 
 
 export default function App() {
