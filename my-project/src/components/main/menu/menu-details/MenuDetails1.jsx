@@ -1,6 +1,6 @@
 import m1 from '../../../../assets/pages/menu-details/section1.jpg'
 import Navbtn from '../../../header/Navbtn'
-import Counter from './counter'
+import Counter from './Counter'
 import BtnDetails1 from './ِBtnDetails1'
 
 

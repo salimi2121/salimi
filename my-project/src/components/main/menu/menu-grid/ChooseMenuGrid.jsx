@@ -1,6 +1,5 @@
 
 
-import React from 'react';
 import { MenuGridProvider, useData } from '../../../../MenuGridContext';
 import FadeInDown from '../../../FadeInDown'
 import MenuItemGrid from './MenuItemGrid';
