@@ -17,7 +17,7 @@ import IndexFaqs from './components/main/pages/faqs/IndexFaqs';
 import Index404 from './components/main/pages/404/Index404';
 import IndexShop from './components/main/shop/our-shop/IndexShop';
 import IndexCart from './components/main/shop/cart/IndexCart';
-import IndexCheckout from './components/main/shop/checkout/IndexCheckout';
+import IndexCheckout from './components/main/shop/checkout/IndexCheckout'
 import IndexBloggrid from './components/main/blog/blog-grid/IndexBloggrid';
 import IndexBlogstandard from './components/main/blog/blog-standard/IndexBlogstandard';
 import IndexBlogdetails from './components/main/blog/blog-details/IndexBlogdetails';

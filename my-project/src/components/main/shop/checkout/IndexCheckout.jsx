@@ -2,8 +2,8 @@ import bghirro from "../../../../assets/bg-h.jpg"
 import Footer from "../../../footer/Footer";
 import ScrollToTopButton from "../../sushi/ScrollToTopButton";
 import HeaderPages from "../../../header/HeaderPages";
-import Chekout1 from "./checkout1";
-import Chekout2 from "./checkout2";
+import Chekout1 from "./Checkout1";
+import Chekout2 from "./Checkout2";
 
 export default function IndexCheckout(){
      return (
