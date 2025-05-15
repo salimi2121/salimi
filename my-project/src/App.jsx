@@ -30,7 +30,7 @@ export default function App() {
 
 
     return (
-        <BrowserRouter basename="/">
+        <Router basename="/">
             <DataProvider>
                 {/* <Header /> */}
                 <Routes>
@@ -64,7 +64,7 @@ export default function App() {
 
                 </Routes>
             </DataProvider>
-        </BrowserRouter>
+        </Router>
 
     )
 }
