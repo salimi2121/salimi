@@ -1,9 +1,9 @@
 import FadeInDown from "../../FadeInDown"
 import FadeInUp from "../../FadeInUp"
-import ch1 from '../../../assets/Pizza-page/chef-section/ch1.jpg'
-import ch2 from '../../../assets/Pizza-page/chef-section/ch2.jpg'
-import ch3 from '../../../assets/Pizza-page/chef-section/ch3.jpg'
-import ch4 from '../../../assets/Pizza-page/chef-section/ch4.jpg'
+import ch1 from '../../../assets/pizza-page/chef-section/ch1.jpg'
+import ch2 from '../../../assets/pizza-page/chef-section/ch2.jpg'
+import ch3 from '../../../assets/pizza-page/chef-section/ch3.jpg'
+import ch4 from '../../../assets/pizza-page/chef-section/ch4.jpg'
 import { FaFacebookF } from "react-icons/fa";
 import { IoLogoTwitter } from "react-icons/io";
 import { GrInstagram } from "react-icons/gr";
