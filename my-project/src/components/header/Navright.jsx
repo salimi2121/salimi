@@ -1,4 +1,4 @@
-import Cartbtn from "./cartbtn";
+import Cartbtn from "./Cartbtn";
 import Navbtn from "./Navbtn";
 import HamburgerMenu from "./Hambergermenu";
 
