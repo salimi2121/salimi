@@ -1,5 +1,4 @@
 import { BurgerProvider } from "../../../BurgerContext"
-import { DataProvider } from "../../../DataContext"
 import FadeInDown from "../../FadeInDown"
 import MenuItemBurger from "./MenuItemBurger"
 

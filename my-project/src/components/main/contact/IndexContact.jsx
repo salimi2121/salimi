@@ -2,7 +2,7 @@ import bghirro from "../../../assets/bg-h.jpg"
 import Footer from "../../footer/Footer";
 import ScrollToTopButton from "../sushi/ScrollToTopButton";
 import HeaderPages from "../../header/HeaderPages";
-import Contact1 from "./contact1";
+import Contact1 from "./Contact1";
 
 export default function IndexContact(){
      return (
