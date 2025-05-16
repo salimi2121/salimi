@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   // اضافه کردن این بخش جدید
-  base: './', // برای رفع مشکل مسیرهای نسبی در production
+  base: '/', // برای رفع مشکل مسیرهای نسبی در production
   
   build: {
     outDir: 'dist', // اطمینان از ساخت خروجی در dist
