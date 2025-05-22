@@ -4,11 +4,11 @@ import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  
+
   base: '/', // برای رفع مشکل مسیرهای نسبی در production
   
   build: {
-    outDir: 'dist', // اطمینان از ساخت خروجی در dist
+    outDir: 'dist', 
     rollupOptions: {
       output: {
         manualChunks(id) {
