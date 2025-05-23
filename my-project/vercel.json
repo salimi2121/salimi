@@ -9,13 +9,11 @@
   "routes": [
     {
       "src": "/assets/.*",
-      "headers": { "Content-Type": "application/javascript" },
-      "continue": true
+      "dest": "/assets/__CODE_BLOCK_0__"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html",
-      "status": 200
+      "dest": "/index.html"
     }
   ]
 }
