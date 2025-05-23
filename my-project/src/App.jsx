@@ -57,11 +57,6 @@ export default function App() {
                     <Route path="/IndexBlogdetails" element={<IndexBlogdetails />} />
                     <Route path="/IndexContact" element={<IndexContact />} />
 
-
-
-
-
-
                 </Routes>
             </DataProvider>
         </Router>
