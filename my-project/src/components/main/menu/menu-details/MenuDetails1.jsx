@@ -10,7 +10,7 @@ export default function MenuDetails1() {
              max-[1280px]:px-20 max-[1200px]:px-17 max-[992px]:px-38 max-[950px]:px-30 max-[910px]:px-24 max-[880px]:px-19 max-[768px]:px-30 max-[710px]:px-24 max-[690px]:px-17 max-[650px]:px-14 max-[600px]:px-5
              max-[530px]:px-7 max-[440px]:px-4 flex max-[992px]:flex-col justify-center items-center gap-5 pt-30">
             <div className="flex rounded-2xl w-2/4 max-[992px]:w-full">
-                <img src={m1} alt="" className='rounded-2xl min-h-[420px] min-w-[400px] max-[992px]:w-full' />
+                <img src={m1} alt="" className='rounded-2xl min-h-[420px] min-w-[290px] max-[992px]:w-full' />
             </div>
             <div className="flex flex-col gap-7 tracking-tighter w-2/4 max-[992px]:w-full ">
                 <h1 className="text-3xl max-[413px]:text-2xl font-bold">

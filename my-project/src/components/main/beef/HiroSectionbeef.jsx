@@ -23,8 +23,8 @@ export default function HiroSectionbeef() {
                 <div className="relative z-1 text-center">
                     <img src={h1} alt="" className='w-[44%] max-[1280px]:w-[55%] max-[1024px]:w-[74%] max-[992px]:w-[62%] max-[768px]:w-[57%] max-[480px]:w-[70%] mx-auto rounded-full border-[15px] border-white'/>
                     <div className="absolute -bottom-44 max-[1024px]:-bottom-65 max-[992px]:bottom-80 max-[768px]:bottom-48 max-[585px]:bottom-40 max-[545px]:bottom-30 max-[455px]:bottom-40 max-[440px]:bottom-30  left-[17%] max-[1280px]:left-[7%] 
-                    max-[1024px]:-left-30 max-[992px]:-left-5 max-[820px]:left-6 max-[600px]:left-10 max-[480px]:left-0 max-[440px]:-left-3 max-[410px]:-left-7 w-4/6 max-[1280px]:w-[85%] max-[1024px]:w-[970px]
-                        max-[992px]:w-[800px] max-[820px]:w-[700px] max-[768px]:w-[550px] max-[600px]:w-[500px] max-[545px]:w-[430px] max-[480px]:w-[28rem] max-[992px]:h-[200px] -z-1">
+                    max-[1024px]:-left-30 max-[992px]:-left-5 max-[820px]:left-6 max-[600px]:left-10 max-[480px]:left-0 max-[440px]:-left-3 max-[410px]:-left-7 max-[370px]:-left-10 w-4/6 max-[1280px]:w-[85%] max-[1024px]:w-[970px]
+                        max-[992px]:w-[800px] max-[820px]:w-[700px] max-[768px]:w-[550px] max-[600px]:w-[500px] max-[545px]:w-[430px] max-[480px]:w-[28rem] max-[400px]:w-[26rem] max-[992px]:h-[200px] -z-1">
                         <img src={h2} alt="" />
                         {/* <Parallax images={images1} /> */}
                     </div>
