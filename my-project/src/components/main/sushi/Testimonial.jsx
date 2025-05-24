@@ -10,7 +10,9 @@ export default function Testimonial() {
     const { clients } = useData(); // Retrieve clients from ClientContext 
 
     return (
-        <div className=" bg-pink-100 pb-12 px-20">
+        <div className=" bg-pink-100 pb-12 xl:px-30
+             max-[1280px]:px-20 max-[1200px]:px-17 max-[740px]:px-10 max-[600px]:px-5
+             max-[530px]:px-7 max-[440px]:px-4">
 
             <div className="flex flex-col gap-4 justify-center items-center py-24 ">
                 <FadeInDown>
