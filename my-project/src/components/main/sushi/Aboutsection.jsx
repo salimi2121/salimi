@@ -56,7 +56,7 @@ export default function Aboutsection() {
             <div className="container mx-auto">
                 <div className="flex flex-row max-[1200px]:flex-col gap-26 max-[1200px]:gap-8 ml-0 
                 max-[1140px]:ml-3 max-[1110px]:ml-10 max-[1075px]:ml-14 max-[1040px]:ml-18 max-[1024px]:ml-0 max-[890px]:ml-6 
-                 max-[835px]:ml-11 max-[795px]:ml-16 max-[768px]:ml-1 max-[690px]:ml-7 max-[650px]:ml-10">
+                 max-[835px]:ml-11 max-[795px]:ml-16 max-[768px]:ml-1 max-[690px]:ml-7 max-[650px]:ml-10 max-[380px]:ml-2">
                     <div className="flex flex-col w-2/4 max-[1200px]:w-4/6 max-[640px]:w-full ">
                         <div className="absolute xl:left-[33%] max-[1280px]:left-[37%] max-[1280px]:top-[20%] 
                         max-[1200px]:left-[49%] max-[1200px]:top-[14%]  max-[650px]:top-[10%] max-[630px]:left-[60%] max-[590px]:left-[67%] max-[550px]:top-[10%] max-[500px]:top-[10%] top-44" style={{
@@ -76,7 +76,7 @@ export default function Aboutsection() {
                         </div>
                         <div className="absolute xl:left-[10%] xl:top-[77%] max-[1280px]:left-[17%] max-[1280px]:top-[49%] 
                         max-[1200px]:left-[23%] max-[1024px]:top-[44%] max-[768px]:top-[39%] max-[650px]:top-[37%] max-[630px]:top-[42%]
-                        max-[590px]:top-[38%] max-[550px]:top-[39%] max-[500px]:top-[34%] max-[480px]:top-[33%] " style={{
+                        max-[590px]:top-[38%] max-[550px]:top-[39%] max-[530px]:top-[37%] max-[500px]:top-[35%] max-[470px]:top-[33%] max-[440px]:top-[30%] max-[400px]:top-[28%] " style={{
                                 transform: 'translate3d(0px, 0px, 0px) rotate(0.0001deg)',
                                 transformStyle: 'preserve-3d',
                                 backfaceVisibility: 'hidden',
@@ -91,7 +91,7 @@ export default function Aboutsection() {
                                 <img src={a2} alt="" />
                             </span>
                         </div>
-                        <img src={img1} alt="" className="max-[1285px]:w-[986px] max-[650px]:w-[500px]" />
+                        <img src={img1} alt="" className="max-[1285px]:w-[986px] max-[650px]:w-[500px] max-[380px]:w-[330px]" />
                     </div>
                     <div className="flex flex-col gap-2 w-2/4 max-[1200px]:w-5/6 max-[1024px]:w-full ">
                         <FadeInDown>

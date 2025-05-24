@@ -16,7 +16,7 @@ export default function MenuItemBurger() {
     const filteredFoods = foods.filter(food => food.category === selectedCategory);
     return (
         <div className='container mx-auto  w-full'>
-            <div className="xl:px-26 max-[650px]:px-14 flex flex-col gap-17">
+            <div className="xl:px-26 max-[650px]:px-14 max-[450px]:px-10 max-[370px]:px-7 flex flex-col gap-17">
                 <FadeInUp>
                     <div className="grid grid-cols-4 max-[530px]:grid-cols-2 gap-8 max-[620px]:gap-4 mx-auto w-[60%] max-[1024px]:w-[80%] max-[480px]:w-full">
                         {categories.filter(category => category !== 'griddl' && category !== 'sushi-cart').map(category => (

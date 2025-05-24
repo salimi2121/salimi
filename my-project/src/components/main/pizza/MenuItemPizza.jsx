@@ -41,7 +41,7 @@ export default function MenuItemPizza() {
                                          <div className=" flex justify-center items-center rounded-full z-4 mt-5 xl:w-[350px] xl:h-[350px]
                                            transition-all duration-200 ease-in border-15 border-white shadow-menu overflow-hidden">
                                             <img src={food.image || 'placeholder_image_url'} alt={food.title} className='w-full h-full min-h-full flex-shrink-0' />
-                                            <div className="absolute left-0 top-8 max-[450px]:top-0 max-[380px]:-top-12 w-full h-full -z-1  text-center transition-all ease-out duration-600 h-img ">
+                                            <div className="absolute left-0 top-8 max-[450px]:hidden w-full h-full -z-1  text-center transition-all ease-out duration-600 h-img ">
                                                 <img src={hoverimg} alt="" className='w-full' />
                                             </div>
                                         </div>

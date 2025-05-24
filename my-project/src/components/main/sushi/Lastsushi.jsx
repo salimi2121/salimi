@@ -22,7 +22,7 @@ export default function Lastsushi() {
                 </div>
             </FadeInDown>
 
-            <div className=" flex gap-7 justify-start mx-28 max-[1300px]:mx-20 max-[1200px]:mx-15 max-[900px]:mx-10 max-[600px]:mx-2 max-[1100px]:flex max-[1100px]:flex-col pb-20">
+            <div className=" flex gap-7 justify-start mx-28 max-[1300px]:mx-20 max-[1200px]:mx-15 max-[900px]:mx-10 max-[600px]:mx-2 max-[380px]:mx-0 max-[380px]:px-5 max-[1100px]:flex max-[1100px]:flex-col pb-20">
                 <div className="flex flex-col gap-6 basis-1/2">
                     {lastSushiItems.length > 0 ? (
                         lastSushiItems.map(sushi => (  // تکرار برای ۵ آیتم آخر  
@@ -33,7 +33,7 @@ export default function Lastsushi() {
                                             <h1 className='capitalize font-bold text-xl'>{sushi.title}</h1>
                                             <p className='text-red-700 text-xl font-bold'>{sushi.price}</p>
                                         </div>
-                                        <p className='text-gray-600 pr-3 w-31rem max-[1100px]:w-[31rem]  max-[540px]:w-[27rem] max-[440px]:w-[23rem] max-[345px]:w-[20rem]'>{sushi.body}</p>
+                                        <p className='text-gray-600 pr-3 w-31rem max-[1100px]:w-[31rem]  max-[540px]:w-[27rem] max-[440px]:w-[22rem] max-[375px]:w-[19rem] max-[345px]:w-[18rem]'>{sushi.body}</p>
                                     </div>
                                 </div>
                             </FadeInUp>
