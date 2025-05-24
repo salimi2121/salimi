@@ -18,7 +18,7 @@ export default function BookingResSection() {
     };
 
     return (
-        <div className="relative overflow-hidden pt-30 z-30 mb-30 px-33 max-[1280px]:px-0 max-[1160px]:px-18 max-[1024px]:px-0 max-[890px]:px-18 max-[740px]:px-8 max-[710px]:px-11 max-[600px]:px-6 max-[530px]:px-8 max-[440px]:px-5" style={{ backgroundImage: `url(${ofbg1})` }} >
+        <div className="relative overflow-hidden pt-30 z-30 px-33 max-[1280px]:px-0 max-[1160px]:px-18 max-[1024px]:px-0 max-[890px]:px-18 max-[740px]:px-8 max-[710px]:px-11 max-[600px]:px-6 max-[530px]:px-8 max-[440px]:px-5" style={{ backgroundImage: `url(${ofbg1})` }} >
             <div className="container mx-auto">
                 <div className=" flex gap-7 max-[1024px]:flex-col  text-white">
                     <div className="w-2/4 max-[1024px]:w-full ">

@@ -47,7 +47,7 @@ function DateInput({ inputStyle }) {
                 dateFormat="MM/dd/yyyy"  // فرمت تاریخ  
                 isClearable // اجازه می‌دهد تاریخ انتخاب شده را پاک کنید  
                 renderCustomHeader={renderCustomHeader}
-                calendarClassName="border-0 shadow-lg "
+                calendarClassName="border-0 shadow-lg z-30"
                 dayClassName={() => "bg-gray-50 rounded border border-gray-200 p-1 px-2"}
                 weekDayClassName={() => "font-semibold text-sm "}
                 formatWeekDay={nameOfDay => nameOfDay.substring(0, 2)} // نمایش دو حرف اول روزها

@@ -5,8 +5,8 @@ import MenuItemRes from "./MenuItemRes"
 
 export default function MenuSectionRes() {
     return (
-        <div className="container z-0 mx-auto px-0 max-[1150px]:px-4 max-[1115px]:px-7 max-[1090px]:px-12 max-[1060px]:px-15 max-[1024px]:px-0 max-[900px]:px-2 
-             max-[880px]:px-4 max-[850px]:px-10 max-[810px]:px-15 max-[768px]:px-4 max-[660px]:px-8 max-[500px]:px-6 pb-30">
+        <div className="container -z-1 relative mx-auto px-0 max-[1150px]:px-4 max-[1115px]:px-7 max-[1090px]:px-12 max-[1060px]:px-15 max-[1024px]:px-0 max-[900px]:px-2 
+             max-[880px]:px-4 max-[850px]:px-10 max-[810px]:px-15 max-[768px]:px-4 max-[660px]:px-8 max-[500px]:px-6 py-30">
             <div className="flex flex-col gap-15">
                 <FadeInDown>
                     <div className="flex flex-col gap-5 justify-center items-center ">
