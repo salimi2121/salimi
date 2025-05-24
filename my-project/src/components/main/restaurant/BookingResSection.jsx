@@ -14,10 +14,11 @@ export default function BookingResSection() {
         with: '100%',
         transition: 'all 0.3s',
         color: '#ffffff',
+        
     };
 
     return (
-        <div className="relative  overflow-hidden pt-30 z-1 px-33 max-[1280px]:px-0 max-[1160px]:px-18 max-[1024px]:px-0 max-[890px]:px-18 max-[740px]:px-8 max-[710px]:px-11 max-[600px]:px-6 max-[530px]:px-8 max-[440px]:px-5" style={{ backgroundImage: `url(${ofbg1})` }} >
+        <div className="relative overflow-hidden pt-30 z-30 mb-30 px-33 max-[1280px]:px-0 max-[1160px]:px-18 max-[1024px]:px-0 max-[890px]:px-18 max-[740px]:px-8 max-[710px]:px-11 max-[600px]:px-6 max-[530px]:px-8 max-[440px]:px-5" style={{ backgroundImage: `url(${ofbg1})` }} >
             <div className="container mx-auto">
                 <div className=" flex gap-7 max-[1024px]:flex-col  text-white">
                     <div className="w-2/4 max-[1024px]:w-full ">
@@ -62,9 +63,9 @@ export default function BookingResSection() {
                                         <input type="text" className=" border z-20 border-[#37b557] font-semibold hover:outline-0 focus-visible:outline-0 text-white p-5 rounded-xl opacity-90 text-lg bg-[#20ac44] transition-all duration-300 ease-out placeholder-white" placeholder="Enter your Phone" />
                                         <span className="absolute top-[45%] right-[53%] max-[1024px]:top-[47%] max-[380px]:top-[49%] max-[1024px]:right-11 z-20 text-white rotate-y-180 mr-2"><BsTelephone /> </span>
 
-                                        <div className="relative flex text-white bg-[#20ac44] border border-[#37b557] rounded-xl">
+                                        <div className="relative flex text-white bg-[#20ac44] border z-20 border-[#37b557] rounded-xl">
                                             <DateInput inputStyle={dateInputStyle} />
-                                            <span className="absolute right-5 top-6 text-white text-xl"><MdDateRange /></span>
+                                            <span className="absolute right-5 top-6 text-white text-xl "><MdDateRange /></span>
                                         </div>
                                     </div>
                                     <div className="w-full bg-[#20ac44] border border-[#37b557] rounded-xl  "><PeopleSelect /></div>

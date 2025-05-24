@@ -16,7 +16,7 @@ export default function HirrosectionRes() {
                 <img src={hiro1} alt="w-full h-full max-w-[590px] max-h-[590px] "/>
 
             </div>
-            <div className="absolute xl:right-[35%] max-[1280px]:left-46 max-[1280px]:top-10 max-[1024px]:left-14 max-[768px]:left-5 max-[585px]:left-8 max-[535px]:left-5 max-[500px]:left-3 max-[410px]:left-0">
+            <div className="absolute xl:right-[35%] max-[1280px]:left-46 max-[1280px]:top-10 max-[430px]:top-7 max-[370px]:top-3 max-[1024px]:left-14 max-[768px]:left-5 max-[585px]:left-8 max-[535px]:left-5 max-[500px]:left-3 max-[430px]:left-0 ">
                 <img src={text1} alt="" className='transform skew-x-23 xl:skew-y-[12rad] max-[1280px]:skew-y-[59rad] max-[768px]:w-40 max-[585px]:w-35 max-[500px]:w-30' />
             </div>
             <div className="xl:order-1 order-2 xl:w-2/4 max-[1280px]:flex max-[1280px]:flex-col max-[1280px]:gap-4">

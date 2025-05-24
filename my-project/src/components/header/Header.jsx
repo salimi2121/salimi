@@ -83,7 +83,7 @@ export default function Header() {
         <div className={`fixed w-full max-w-full flex xl:px-30
              max-[1280px]:px-20 max-[1200px]:px-17 max-[740px]:px-10 max-[600px]:px-5
              max-[530px]:px-7 max-[440px]:px-4
-              justify-between items-center z-10  
+              justify-between items-center z-40  
             ${isFixed ? 'top-0 max-[1285px]:py-4 bg-black transition-all duration-300 ease-in-out' : 'top-4 bg-transparent'}   
             ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-[-220px] transition-all duration-300 ease-in'}`}>  
             
